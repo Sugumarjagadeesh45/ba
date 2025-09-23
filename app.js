@@ -25,6 +25,7 @@ if (!fs.existsSync(uploadsDir)) {
   console.log("✅ Created uploads directory");
 }
 
+
 // Serve static files from uploads directory
 app.use("/uploads", express.static(uploadsDir));
 
@@ -56,6 +57,7 @@ const authRoutes = require("./routes/authRoutes");
 const userRoutes = require("./routes/userRoutes");
 const walletRoutes = require("./routes/walletRoutes");
 const routeRoutes = require("./routes/routeRoutes");
+
 
 // ✅ Mount other routes
 app.use("/api/admins", adminRoutes);

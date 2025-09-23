@@ -18,6 +18,8 @@ const getOSRMUrl = () => {
   return url;
 };
 
+
+
 // 🚖 GET route from OSRM
 router.get("/route", async (req, res) => {
   try {
