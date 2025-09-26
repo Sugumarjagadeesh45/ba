@@ -27,11 +27,11 @@ const driverLocationSchema = new mongoose.Schema({
     default: Date.now,
     index: true
   },
-  status: {
+status: {
     type: String,
-    enum: ["Live", "Offline", "OnRide"],
-    default: "Live"
-  }
+    enum: ["offline", "online", "Live", "onRide"], // ✅ add onRide
+    default: "offline",
+  },
 }, {
   timestamps: true
 });
